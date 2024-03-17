@@ -1,0 +1,80 @@
+
+.container {
+  border: 1px solid black;
+  background-color:black;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 90px;
+  
+  
+}
+body{
+background:url("https://www.shutterstock.com/image-vector/abstract-financial-graph-uptrend-line-260nw-1534094558.jpg") ;
+
+
+background-size: 1550px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;}
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightblue;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {display: block;
+}
+.box{
+    margin-top: 300px;
+    display:grid;
+    grid-template-columns:max-content max-content max-content;
+    gap: 60px;
+
+
+
+}
+.box button{
+    font-size: 30px;
+    background-color:black;
+    color:white;
+}
+.close{
+    display:grid;
+    grid-template-columns:max-content max-content max-content;
+    gap: 60px;
+
+}

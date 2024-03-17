@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <link rel="stylesheet" href="page7.css">
+
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="dropdown"><button  onclick="Function()" class="dropbtn">PROFILE</button></div>
+            <div class="dropdown"><button onclick="Function()" class="dropbtn">VERIFICATION</button></div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">FUNDER LIST</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="">Select Funder In List</a>
+                  <a href="">Funder Details</a>
+                </div>
+              </div>
+              
+              
+              <script>
+             
+              function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+              }
+              
+              
+              window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');
+                    }
+                  }
+                }
+              }
+              </script>
+        </div>
+        <div class="box">
+            <button  >Fund Track</button>
+            <button>My Requirement</button>
+            <button>Ticket Size</button>
+
+
+
+        </div><br>
+        <div class="close" style="margin-top: 200px;  ">
+
+        <button type="submit" class="btn" style="background-color: black; color: white; font-size:30px;">Close</button>
+    <button type="button" class="btn cancel" onclick="closeForm()" style="background-color: black; color: white; font-size:30px;" >Request</button>
+        </div>
+
+            
+
+
+    </body>
+</html>

@@ -1,0 +1,225 @@
+body {
+    background:url("https://www.shutterstock.com/image-vector/abstract-financial-graph-uptrend-line-260nw-1534094558.jpg") ;
+    background-size: 1800px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.form-check input[type="checkbox"] {
+    margin-right: 10px;
+}
+.header {
+    background-color: black;
+    height: auto;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+.button {
+    padding: 20px 20px;
+    background-color:white;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.button1 {
+    padding: 8px 16px;
+    background-color:lightgreen;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.borrower-bar .button {
+    margin-right: 0;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+}
+.username {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.rating-modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+.rating-modal-content h3 {
+    margin-bottom: 20px;
+}
+.stars {
+    margin-bottom: 20px;
+    direction: rtl;
+}
+.stars input[type="radio"] {
+    display: none;
+}
+.stars label {
+    font-size: 30px;
+    color: #aaa;
+    cursor: pointer;
+}
+.stars label:hover,
+.stars label:hover ~ label,
+.stars input[type="radio"]:checked ~ label {
+    color: #ffc107;
+}
+.review-input {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+.barrower-modal-content {
+background-color: #fefefe;
+margin: 5% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 60%;
+max-width: 500px;
+border-radius: 10px;
+text-align: center;
+}
+.barrower-modal-content h3 {
+    margin-bottom: 20px;
+}
+
+.barrower-radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.barrower-radio input[type="radio"] {
+    display: none;
+}
+
+.barrower-radio label {
+    margin: 0 10px;
+    font-size: 16px;
+    color:black;
+    cursor: pointer;
+}
+.barrower-radio label::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+}
+.barrower-radio input[type="radio"]:checked + label::before {
+    background-color: coral;
+    border-color: coral;
+}
+.ticket-size-modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+.ticket-size-modal-content h3 {
+    margin-bottom: 20px;
+}
+.my-requirements-modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+.my-requirements-modal-content h3 {
+    margin-bottom: 20px;
+}
+.file-upload {
+    margin-bottom: 20px;
+}
+.file-upload input[type="file"] {
+    display: none;
+}
+.file-upload label {
+    padding: 10px 20px;
+    background-color: grey;
+    color:black;
+    border-radius: 5px;
+    cursor: pointer;
+}

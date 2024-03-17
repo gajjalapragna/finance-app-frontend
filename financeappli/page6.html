@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <link rel="stylesheet" href="page6.css">
+
+        <div class="offer">
+            <p id="blink"> 
+                FINANCER OFFER
+            </p>     
+            <script type="text/javascript"> 
+                var blink = 
+                    document.getElementById('blink'); 
+         
+                setInterval(function () { 
+                    blink.style.opacity = 
+                    (blink.style.opacity == 0 ? 1 : 0); 
+                }, 1000); 
+            </script> 
+        </div>
+      
+  
+            
+    
+
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="details">
+                <h1 style="text-align: right;">BLOCK
+                </h1>
+                <h1><U>BORROWER DETAILS:</U></h1>
+                <ul>
+
+                <li><a href="">PROFILE</a><BR><br></li>
+                <li><a href="">REQUIREMENT</a><BR><br></li>
+                <li><a href="">VERIFICATION STATUS</a><br><br></li>
+                <li><a href="">PREVIOUS LOAN HISTORY</a></li>
+                </ul>
+
+
+            </div><br><br>
+            <button onclick="myFunction()"  style="background-color:lightpink"><h1>BLOCK</h1></button>
+            <script>
+              function myFunction() {
+                 let text = "Are You sure to Block";
+                  if (confirm(text) == true) {
+                  text = "You pressed OK!";
+               } else {
+                 text = "You canceled!";
+                 }
+                
+           }
+           </script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <button onclick="myFunction1()" style="background-color: lightpink;"><h1>IGNORE</h1></button>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <button onclick="myFunction1()"  style="background-color:lightpink;"><h1>FINANCE</h1></button>
+
+           <h1  class="open-button" onclick="openForm()" >chat</h1>
+           <div class="chat-popup" id="myForm">
+    
+  <form class="form-container" >
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+</script>
+</div>
+
+
+    </body>
+</html>
